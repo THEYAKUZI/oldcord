@@ -3,7 +3,7 @@
 	--channeltextarea-background: hsl(218, calc(var(--saturation-factor, 1) * 8%), 27%);
 	--header-primary: var(--white-500);
 	--header-secondary: #b9bbbe;
-	--channels-default: #8e9297;
+	--channels-default: #ff0000;
 	--interactive-normal: #b9bbbe;
 	--interactive-hover: #dcddde;
 	--interactive-active: var(--white-500);
@@ -18,7 +18,7 @@
 	--background-accent: hsl(217, calc(var(--saturation-factor, 1) * 8%), 34%);
 	--background-floating: #18191c;
 	--background-modifier-hover: #4f545c29;
-	--background-modifier-active: #4f545c3d;
+	--background-modifier-active: #4f545c3d; 
 	--background-modifier-selected: #4f545c52;
 	--background-modifier-accent: #ffffff0f;
 	--background-mentioned: hsla(38, calc(var(--saturation-factor, 1) * 96%), 54%, 0.051);
