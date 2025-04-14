@@ -12,7 +12,7 @@
 	--modal-background: var(--background-primary);
 	--primary-600: var(--background-primary);
 	--primary-630: var(--background-secondary);
-	--background-secondary: hsl(223, calc(var(--saturation-factor, 1) * 7%), 20%);
+	--background-secondary: #fc0a0a;
 	--background-secondary-alt: hsl(220, calc(var(--saturation-factor, 1) * 7%), 17%);
 	--background-tertiary: hsl(216, calc(var(--saturation-factor, 1) * 7%), 14%);
 	--background-accent: hsl(217, calc(var(--saturation-factor, 1) * 8%), 34%);
