@@ -9,7 +9,7 @@
 	--interactive-hover: #dcddde;
 	--interactive-active: var(--white-500);
 	--interactive-muted: hsl(217, calc(var(--saturation-factor, 1) * 8%), 34%);
-	--background-primary: #0078f0;
+	--background-primary: #313338;
 	--modal-background: var(--background-primary);
 	--primary-600: var(--background-primary);
 	--primary-630: var(--background-secondary);
