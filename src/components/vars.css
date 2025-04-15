@@ -14,11 +14,11 @@
 	--primary-600: var(--background-primary);
 	--primary-630: var(--background-secondary);
 	--background-secondary: #2B2D31;
-	--background-secondary-alt: #1E1F22;
+	--background-secondary-alt: #0ddbe2;
 	--background-tertiary: #0040ff;
-	--background-accent: #1E1F22;
-	--background-floating: #18191c;
-	--background-modifier-hover: #4f545c29;
+	--background-accent: #f80303;
+	--background-floating: #05ff2f;
+	--background-modifier-hover: #e209d7f6;
 	--background-modifier-active: #4f545c3d; 
 	--background-modifier-selected: #4f545c52;
 	--background-modifier-accent: #ffffff0f;
