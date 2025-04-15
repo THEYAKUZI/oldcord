@@ -1,10 +1,10 @@
-# Oldcord OG discord color theme
+# Oldcord pre-refresh UI theme
 
-This a slight edit of oldcord to change their color theme to how it used to be before the shitty update 
-(this is only a slight edit of oldcord I'm not the developer of oldcord)
+This a slight edit of oldcord to change it to pre-refresh UI before the shitty discord UI update
 
-![image](https://github.com/user-attachments/assets/44931310-bd24-416d-a3b6-babb3caa37a4)
+![image](https://github.com/user-attachments/assets/35b28632-6595-40f4-bc68-eb84a0c0c906)
 
-To install with Vebcord/BetterDiscord simply place "Oldcord.theme.css" into plugins/themes folder 
+To install with Vencord simply place "Oldcord.theme.css" into the "plugins" folder or for BetterDiscord place it in the "themes" folder
+
 or the easiest method
 Go to online themes and add this link: https://raw.githubusercontent.com/THEYAKUZI/oldcord/main/src/main.css
