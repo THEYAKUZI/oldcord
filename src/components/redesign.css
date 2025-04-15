@@ -409,6 +409,13 @@
 	.container__87bf1.checked__87bf1 {
 		border: none;
 	}
+	button.button__67645, .visual-refresh span.button__67645 {
+		transition: none;
+	}
+	/* mic button */
+	.micButtonParent__37e49:hover>button {
+		background-color: rgba(0,0,0,0);
+	}
 
 	/* search bar(s) */
 	.medium_a45028 {
@@ -592,6 +599,22 @@
 			height: 24px;
 		}
 	}
+	.avatarWrapper__37e49 {
+		padding-left: 2px;
+		border-radius: 4px;
+		transition: none;
+		&:hover {
+			background-color: var(--background-modifier-selected);
+			color: var(--interactive-hover);
+		}
+	}
+	.avatarWrapper__37e49 .nameTag__37e49 {
+		padding-bottom: 4px;
+		padding-top: 4px;
+	}
+	.nameTag__37e49 {
+		margin-right: 4px;
+	}
 
 	/* style dms correctly (refresh edition) */
 	.channel__972a0 {
@@ -689,6 +712,9 @@
 	.markup__75297 code.inline {
 	    font-family: var(--font-code) !important;
 	}
+	.embedFull__623de code.inline {
+		background: var(--background-tertiary) !important;
+	}
 
 	/* discord logo */
 	.childWrapper__6e9f8 svg {
@@ -770,6 +796,9 @@
 		.lottieIcon__5eb9b {
 			height: unset !important;
 			width: unset !important;
+			.channelAppLauncher_e6e74f &{
+				width: 28px !important
+			}
 		}
 		.stackedBars__74017 {
 			background: var(--background-secondary);
@@ -884,9 +913,10 @@
 	}
 
 	.embedFull__623de {
-		border-left: 4px solid var(--background-tertiary) !important;
 		background: var(--background-secondary);
-		border: unset;
+		border-top: unset;
+		border-right: unset;
+		border-bottom: unset;
 	}
 	
 	 .cardPrimary__73069, .cardPrimary__73069.editable__73069 {
@@ -986,6 +1016,16 @@
         font-feature-settings: normal;
         font-variant-numeric: normal;
     }
+
+	/* placeholder gray square when moving a server icon */
+	.dragInner__87847 {
+		background-color: var(--background-primary) !important;
+		border: none !important;
+	}
+	svg.placeholderMask__87847 {
+		width: 50px;
+		height: 50px;
+	}
 }
 
 :where(.visual-refresh) .item__001a7, :where(.visual-refresh) .item__001a7[aria-checked=true], :where(.visual-refresh) .itemFilled__001a7[aria-checked=true], :where(.visual-refresh) .radioBar__001a7 {
