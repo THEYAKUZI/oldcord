@@ -1,6 +1,6 @@
 # Oldcord pre-refresh UI theme
 
-This a slight edit of oldcord to change it to pre-refresh UI before the shitty update
+This a slight edit of oldcord to change it to pre-refresh UI before the shitty discord UI update
 
 ![image](https://github.com/user-attachments/assets/35b28632-6595-40f4-bc68-eb84a0c0c906)
 
