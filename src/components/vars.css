@@ -119,9 +119,9 @@
 }
 body {
 	--text-muted: #72767d;
-	--font-primary: Whitney;
-	--font-display: Whitney !important;
-	--font-headline: Whitney;
+    --font-primary: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-display: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    --font-headline: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	--blurple: var(--brand-experiment);
 	--blurple-hover: hsl(227, calc(var(--saturation-factor, 1) * 44%), 59%);
 	--blurple-active: hsl(226, calc(var(--saturation-factor, 1) * 34%), 52%);
