@@ -607,6 +607,10 @@ html.theme-dark .badgeContainer__635ed path {
 .biteSize_da5890 div:nth-child(2) {
 	display: none;
 }
+/* i hate this reaction experiment so much */
+.biteSize_c0bea0 .clickableContainer__39ec2 {
+  order: -1;
+}
 
 /*pfp (duh)*/
 .avatar__75742 {
@@ -1196,6 +1200,12 @@ html:is([lang="en-GB"],[lang="en-us"]) .footer__5be3e::after {
 	color: var(--interactive-active);
 	position: relative;
 }
+.fullSize_c0bea0 .usernameRow__63ed3 {
+	margin-top: -10px;
+}
+.fullSize_c0bea0 .username__24502.container__63ed3 {
+	margin: unset !important;
+}
 
 .body__24502 {
 	gap: 0;
@@ -1744,7 +1754,7 @@ html[lang="DE"] .headerInner__24502 .headerButtons__24502 {
 }
 
 .hp-customStatusContainer {
-	padding: 20px 20px 20px 31px;
+	padding: 20px 20px 20px 21px;
 	border-radius: unset;
     background: unset;
 }

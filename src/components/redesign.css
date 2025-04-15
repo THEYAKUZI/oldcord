@@ -45,7 +45,7 @@
 	
 	.panels_c48ade {
 		display: flex;
-		width: 240px;
+		width: 241px;
 		flex-direction: column;
 		border: none;
 		border-radius: 0;
@@ -372,6 +372,11 @@
 		gap: unset;
 		padding-left: unset;
 	}
+	.iconBadgeBottom__9293f {
+		right: 2px;
+		bottom: 0;
+		--custom-icon-offset: unset;
+	}
 	.navButton__08434 {
 		border-radius: 4px;
 	    color: var(--interactive-normal);
@@ -480,6 +485,17 @@
 	.footerSeparator__49fc1 {
 		box-shadow: inset 0 1px 0 hsl(220 calc(1*6.522%) 18.039% /.6);
 	}
+	.footer__5be3e {
+		.channelTextArea__74017 {
+			box-sizing: border-box;
+		    width: 100%;
+		    border-radius: 3px;
+		    background-color: var(--deprecated-text-input-bg);
+		    border: 1px solid var(--deprecated-text-input-border);
+		    -webkit-transition: border-color .2s ease-in-out;
+		    transition: border-color .2s ease-in-out;
+		}
+	}
 
 	.addFriend__133bf:hover {
 		background: var(--green) !important;
@@ -550,6 +566,12 @@
 				width: 40px;
 				height: 40px;
 			}
+		}
+		.panel__5dec7 {
+			background-color: var(--background-secondary-alt);
+		    border-top-left-radius: unset;
+		    border-top-right-radius: unset;
+		    border-bottom: unset;
 		}
 	}
 	.toolbar__9293f > .iconWrapper__9293f {
@@ -756,6 +778,9 @@
 			border: unset;
 			border-radius: 4px;
 			box-shadow: unset;
+		}
+		.spoilerContainer__54ab5.attachmentContainer__54ab5 .media__41ea0 {
+			border-radius: 3px;
 		}
 		.slateTextArea_ec4baf {
 			margin-left: unset;
@@ -975,7 +1000,7 @@
 		gap: unset;
 		justify-content: center;
 		bottom: 35px;
-		left: 26px;
+		left: -12px;
 		z-index: 3001;
 		-webkit-app-region: no-drag !important;
 		.winButton_c38106 {
@@ -1028,7 +1053,10 @@
 	    .folderIconWrapper__48112, .folder__48112 {
 	        width: 50px;
 	        height: 50px;
-	    }
+	        overflow: hidden;
+	        border-radius: 16px;
+			--bg-mod-subtle: rgba(114, 137, 218, 0.4) !important;
+		}
 		.iconSizeMini_f34534 {
 			width: 16px;
 			height: 16px;
@@ -1072,6 +1100,9 @@
 		border: unset;
 		box-shadow: unset;
 	}
+}
+.sidebar_c48ade:after {
+	display: none;
 }
 
 .spriteContainer__04eed {
