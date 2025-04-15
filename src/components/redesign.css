@@ -9,6 +9,15 @@
 	--modal-footer-background: color-mix(in oklab, var(--primary-630) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
 	--checkbox-background-checked: var(--blurple);
 	--text-normal: color-mix(in oklab, var(--primary-230) 100%, var(--theme-text-color, #000) var(--theme-text-color-amount, 0%));
+	--__spoiler-background-color--hidden: var(--primary-700);
+    --__spoiler-background-color--hidden--hover: hsl(var(--primary-700-hsl)/0.8);
+    --__spoiler-background-color--revealed: hsl(var(--white-500-hsl)/0.1);
+    --__spoiler-text-color--hidden: transparent;
+    --__spoiler-warning-text-color: var(--primary-200);
+    --__spoiler-warning-text-color--hover: var(--white-500);
+    --__spoiler-warning-background-color: hsl(var(--black-500-hsl)/0.6);
+    --__spoiler-warning-background-color--hover: hsl(var(--black-500-hsl)/0.9);
+    --__spoiler-container-box-shadow-color: hsl(var(--black-500-hsl)/0.1);
 }
 
 /* remove the title bar on web & linux */
@@ -400,6 +409,13 @@
 	.container__87bf1.checked__87bf1 {
 		border: none;
 	}
+	button.button__67645, .visual-refresh span.button__67645 {
+		transition: none;
+	}
+	/* mic button */
+	.micButtonParent__37e49:hover>button {
+		background-color: rgba(0,0,0,0);
+	}
 
 	/* search bar(s) */
 	.medium_a45028 {
@@ -583,9 +599,28 @@
 			height: 24px;
 		}
 	}
+	.avatarWrapper__37e49 {
+		padding-left: 2px;
+		border-radius: 4px;
+		transition: none;
+		&:hover {
+			background-color: var(--background-modifier-selected);
+			color: var(--interactive-hover);
+		}
+	}
+	.avatarWrapper__37e49 .nameTag__37e49 {
+		padding-bottom: 4px;
+		padding-top: 4px;
+	}
+	.nameTag__37e49 {
+		margin-right: 4px;
+	}
 
 	/* style dms correctly (refresh edition) */
 	.channel__972a0 {
+		.interactive__972a0:active, .interactiveSelected__972a0 {
+			background: var(--bg-overlay-selected,var(--background-modifier-selected));
+		}
 		.interactiveSelected__972a0 .name__20a53  {
 	        color: var(--interactive-active) !important;
 	    }
@@ -677,6 +712,9 @@
 	.markup__75297 code.inline {
 	    font-family: var(--font-code) !important;
 	}
+	.embedFull__623de code.inline {
+		background: var(--background-tertiary) !important;
+	}
 
 	/* discord logo */
 	.childWrapper__6e9f8 svg {
@@ -758,6 +796,9 @@
 		.lottieIcon__5eb9b {
 			height: unset !important;
 			width: unset !important;
+			.channelAppLauncher_e6e74f &{
+				width: 28px !important
+			}
 		}
 		.stackedBars__74017 {
 			background: var(--background-secondary);
@@ -872,8 +913,10 @@
 	}
 
 	.embedFull__623de {
-		border-left: 4px solid var(--background-tertiary);
-	    background: var(--background-secondary);
+		background: var(--background-secondary);
+		border-top: unset;
+		border-right: unset;
+		border-bottom: unset;
 	}
 	
 	 .cardPrimary__73069, .cardPrimary__73069.editable__73069 {
@@ -881,6 +924,17 @@
 	}
 	.sensitivity_ac7648 {
 		min-height: 0px;
+	}
+
+	/* add emoji button */
+	.largeReactionBtn__23977.forceShow__23977 {
+		padding: unset;
+	}
+	.reactionBtn__23977 {
+		opacity: 0;
+	}
+	.reactionBtn__23977:hover {
+		background: none;
 	}
 
 	/* channel category arrow */
@@ -927,13 +981,58 @@
 	    color: var(--white);
 		fill: var(--white);
 	}
+
+	/* ping icon */
+	.lowerBadge_cc5dd2 {
+		border: 5px solid var(--background-tertiary);
+	    border-radius: 50%;
+		margin-bottom: -5px;
+		margin-right: -5px;
+	}	
+
+    /* voice channel user count */
+    .wrapper__260e1 {
+        display: flex;
+        align-items: stretch;
+        line-height: 20px;
+        border-radius: 10px;
+        color: var(--channels-default);
+        border: none;
+    }
+    .total__260e1 {
+        padding: 0 6px 0 0;
+        background-color: var(--background-tertiary);
+        &:after {
+            left: -8px;
+            border-right: 8px solid transparent;
+            border-right-color: var(--background-tertiary);
+        }
+    }
+    .users__260e1 {
+        padding: 0 8px 0 6px;
+        background-color: var(--background-primary);
+    }
+    .total__260e1, .users__260e1 {
+        font-feature-settings: normal;
+        font-variant-numeric: normal;
+    }
+
+	/* placeholder gray square when moving a server icon */
+	.dragInner__87847 {
+		background-color: var(--background-primary) !important;
+		border: none !important;
+	}
+	svg.placeholderMask__87847 {
+		width: 50px;
+		height: 50px;
+	}
 }
 
 :where(.visual-refresh) .item__001a7, :where(.visual-refresh) .item__001a7[aria-checked=true], :where(.visual-refresh) .itemFilled__001a7[aria-checked=true], :where(.visual-refresh) .radioBar__001a7 {
 	border-radius: 5px
 }
 	/*stuff*/
-	.bar_c38106:not(.systemBar_c38106) {
+	.bar_c38106:not(.systemBar_c38106):not(:has(.channelTabs-trailing)) {
 		padding: 0 12px 0 !important;
 		height: 50px;
 		margin-top: -33px;
@@ -962,6 +1061,25 @@
 		gap: 8px;
 		z-index: 102;
 	}
+	.bar_c38106 .channelTabs-trailing .trailing_c38106 {
+		top: 44px;
+        right: 10px;
+	}
+    .channelTabs-trailing .winButtons_c38106 {
+        position: absolute;
+		top: -53px;
+        right: 6px;
+        & .winButton_c38106 {
+            width: var(--custom-app-top-bar-height);
+            height: var(--custom-app-top-bar-height);
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    #channelTabs-settingsMenu {
+        position: relative;
+        right: 20px;
+    }
 	.container__01ae2 > .container__9293f {
 		z-index: 102;
 	}
@@ -1021,6 +1139,9 @@
 			left: -84px;
 		}
 	}
+    .channelTabs-tabContainer div {
+        margin-bottom: 0 !important;
+    }
 /* server list */
 .base_c48ade .sidebar_c48ade > .guilds_c48ade {
     width: 80px;

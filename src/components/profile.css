@@ -574,6 +574,9 @@ html.theme-dark .badgeContainer__635ed path {
 	--theme-text-color-amount: unset !important;
 	--background-tertiary: hsl(216, calc(var(--saturation-factor, 1) * 7%), 14%);
 }
+.profileEffects__01370, .avatarDecoration__44b0c, .avatarDecoration_c19a55{
+	display: none
+}
 .outer_c0bea0.biteSize_c0bea0,
 .userPopoutOverlayBackground_c69a7b {
 	margin: 0;
@@ -1880,3 +1883,12 @@ html[lang="DE"] .headerInner__24502 .headerButtons__24502 {
 	}
 }
 */
+
+/*user panel in dms*/
+.panel_c0bea0{
+	background: var(--bg-overlay-4,var(--background-secondary));
+	& .container__63ed3{
+		background: var(--bg-overlay-2,var(--background-secondary))
+	}
+
+}
