@@ -1,6 +1,7 @@
 # A fork of OldCord
 
-This edit brings back the 2025 color theme before the shitty update of discord instead of the 2020 one 
+This edit brings back the same color theme before the shitty update of discord 
+The original oldcord uses different color theme so i added the exact same color as it was before 
 
 ![image](https://github.com/user-attachments/assets/44931310-bd24-416d-a3b6-babb3caa37a4)
 
